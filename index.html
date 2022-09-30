@@ -6,7 +6,7 @@
 				background-color:black;
 			}
 			#blue{
-				background-color:blue;
+				background-color:yellowgreen;
 			}
 			#img1{
 				padding-left:15px;
@@ -78,16 +78,16 @@
 				display:block;
 				height:120px;
 				width:100%;
-				background-color:blue;
+				background-color:yellowgreen;
 			}
 			#date_time{
-				background-color:blue;
+				background-color:yellowgreen;
 				width:100%;
 				height:30px;
 			}
 			#nav_bar{
 				width:100%;
-				background-color:blue;
+				background-color:yellowgreen;
 			}
 			a{
 				text-decoration:none;
@@ -231,7 +231,7 @@
 			<div id="right_side">
 				<div id="div1">
 					<input type="search" placeholder="search here" id="search_bar"></input>
-					<button id="search"><img src="images3.png" id="lens"></img></button>
+					<button id="search"><img src="images3.png" id="lens" onclick="func()"></img></button>
 				</div>
 				<div id="logo2">
 					<img src="images2.jpeg" id="img2"></img>
@@ -309,5 +309,11 @@
 				</tbody>
 			</table>
 		</div>
+		<script>
+			function func()
+{
+  new Audio("epic.mp3").play();
+}
+		</script>
 	</body>
 </html>
