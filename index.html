@@ -230,8 +230,19 @@
 				  to {
 				    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 				  }
-			}	
-		</style>
+			}
+			h2{
+				animation:blinkingText 1s infinite;
+			}
+			
+				 @keyframes blinkingText{
+			0%{     color: blue;    }
+			49%{    color: yellow; }
+			60%{    color: transparent; }
+			99%{    color:transparent;  }
+			100%{   color: green;    }
+		    }
+	</style>
 	</head>
 	<body>
 		<div id="blue">
@@ -246,7 +257,7 @@
 				<h1 class="glow">ALL INDIA NEWS</h1>
 				</div>
 				<div>
-				<h2>WEATHER REPORT</h2>
+				<h2 >WEATHER REPORT</h2>
 				</div>
 			</div>
 			<div id="right_side">
