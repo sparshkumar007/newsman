@@ -156,7 +156,10 @@
 				margin-top:-16px;
 				text-align:center;
 				position:relative;
-				animation:myMove 20s infinite;
+				animation:myMove;
+				animation-duration:20s;
+				animation-iteration-count:infinite;
+				animation-timing-function:linear;
 				animation-direction:reverse;
 			}
 			#image_part{
@@ -219,7 +222,7 @@
 				  font-size: 80px;
 				  color: #fff;
 				  text-align: center;
-				  animation: glow 1s ease-in-out infinite alternate;
+				  animation: glow 1s linear infinite alternate;
 				}
 
 				@-webkit-keyframes glow {
@@ -232,15 +235,13 @@
 				  }
 			}
 			h2{
-				animation:blinkingText 1s infinite;
+				animation:blinkingText 2s infinite;
 			}
 			
 				 @keyframes blinkingText{
 			0%{     color: blue;    }
 			49%{    color: yellow; }
-			60%{    color: transparent; }
-			99%{    color:transparent;  }
-			100%{   color: green;    }
+			99.9%{    color:transparent;  }
 		    }
 		  .glow{
 		   text-transform: uppercase;
@@ -259,7 +260,7 @@
 		  text-fill-color: transparent;
 		  -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
-		  animation: textclip 2s linear infinite;
+		  animation: textclip 1s linear infinite;
 		  display: inline-block;
 		      font-size:60px;
 		}
